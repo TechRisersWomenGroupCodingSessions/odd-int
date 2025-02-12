@@ -1,2 +1,2 @@
 def isOdd(num_list):
-    return 7
+    return num_list[0]
