@@ -11,7 +11,9 @@ def isOdd(num_list): # [1,2,2]
     print(f"value of dict after loop {dict_vals_count}")
   
     for key, value in dict_vals_count.items():
-        if value == 1:
+        if value % 2 == 1:
           return key
+    
+
 
     
