@@ -15,5 +15,6 @@ def isOdd(num_list): # [1,2,2]
           return key
     
 
-
-    
+# refactor lines 11 onwards to test multiple intgers insted of doingthree different tests with multiple intgers
+# using inbuilt functions in  python such as count() to see if it works 
+# Using a debugger so we dont have to print as much    
