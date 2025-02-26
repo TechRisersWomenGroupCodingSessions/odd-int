@@ -1,22 +1,10 @@
 def isOdd(num_list): # [1,2,2]
-    dist_vals=list(set(num_list)) # [1,2]
-    dict_vals_count = {key: 0 for key in dist_vals}
-    print(f"Default value of dict: {dict_vals_count}")
-    for i in dist_vals:
-        if not isinstance(i, int):
-            return 'Not valid input'
-        # print(f"Loop of i: {i}")
-        for j in num_list:
-            # print(f"Loop of j: {j}")
-            if i == j:
-                dict_vals_count[i] += 1
-    print(f"value of dict after loop {dict_vals_count}")
-  
-    for key, value in dict_vals_count.items():
-        if value % 2 == 1:
-          return key
-    
+    for i in num_list:
+        if num_list.count(i) % 2 == 1:
+            return i
 
-# refactor lines 11 onwards to test multiple intgers insted of doingthree different tests with multiple intgers
-# using inbuilt functions in  python such as count() to see if it works 
-# Using a debugger so we dont have to print as much    
+
+
+
+
+
